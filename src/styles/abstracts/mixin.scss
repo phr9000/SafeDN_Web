@@ -1,1 +1,38 @@
-@import '/src/assets/styles/abstracts/variables.scss';
+@import './src/styles/abstracts/variables.scss';
+
+@mixin font($size, $weight, $color, $height:1) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+    line-height: $height;
+  }
+
+// 말줄임표
+@mixin ellipsis($line) {
+    @if $line == 1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }@else {
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $line;
+    }
+    }
+ // 포지션
+@mixin posi($x, $y) {
+    position: absolute;
+    left: $x;
+    top: $y;
+
+@if $x == 50% and $y == 50% {
+    transform : translate(-50%, -50%);
+} @else if $x == 50% {
+    transform : translateX(-50%);
+} @else if $y == 50% {
+    transform : translateY(-50%);
+} 
+}
+
