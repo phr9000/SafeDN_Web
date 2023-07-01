@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
-import './styles/index.scss'
+import './assets/styles/index.scss'
 import * as antd from 'antd'
 
 function App() {
