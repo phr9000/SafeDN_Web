@@ -2,7 +2,7 @@ import React from 'react'
 import logo from './logo.svg'
 import './App.css'
 import './assets/styles/index.scss'
-import * as antd from 'antd'
+import * as antd from './component/useAntd'
 
 function App() {
   return (
