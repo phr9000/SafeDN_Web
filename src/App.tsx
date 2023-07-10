@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import './assets/styles/index.scss'
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
