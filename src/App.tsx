@@ -1,12 +1,13 @@
 import React from 'react'
 import './assets/styles/index.scss'
+import Header from './component/header'
+import InitRoutes from './router/routes'
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="text-3xl font-bold underline">test</div>
-      </header>
+    <div>
+      <Header />
+      <InitRoutes />
     </div>
   )
 }
