@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Main: React.FC = () => {
+const Login: React.FC = () => {
   return (
-    <div className="mainWrapper">
+    <div className="loginWrapper">
       <p>test main</p>
       <p>test main</p>
       <p>test main</p>
@@ -11,4 +11,4 @@ const Main: React.FC = () => {
   )
 }
 
-export default Main
+export default Login

@@ -12,7 +12,9 @@
 @import "./common.scss";
 
 // layout 
+@import "./pages/main.scss";
 
 // components
 @import "./src/assets/styles/components/icon.scss";
-@import "./components/header.scss"
+@import "./components/header.scss";
+@import "./components/footer.scss";
