@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import MainLogo from '../assets/images/ic_main_logo.svg'
-
-const mainTabData: string[] = ['분양', '커뮤니티', '업체', '고객센터']
+import { useNavigate } from 'react-router-dom'
 
 const Header: React.FC = () => {
+  const mainTabData: string[] = ['분양', '커뮤니티', '업체', '고객센터']
+  const [isSubmenu, setisSubmenu] = useState<boolean>(false)
+  const navigate = useNavigate()
+
+  const tabClick = () => {
+    setisSubmenu(!isSubmenu)
+  }
+
+  const loginClick = () => {
+    navigate('/')
+  }
+
   return (
     <div className="headerWrapper">
       <div className="logoWrapper">
@@ -14,12 +25,14 @@ const Header: React.FC = () => {
         {mainTabData.map((item, index) => {
           return (
             <li key={index}>
-              <p>{item}</p>
+              <p onClick={tabClick}>{item}</p>
             </li>
           )
         })}
       </ul>
-      <button className="loginBtn">로그인</button>
+      <button className="loginBtn" onClick={loginClick}>
+        로그인
+      </button>
     </div>
   )
 }
