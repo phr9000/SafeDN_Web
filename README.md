@@ -1,1 +1,4 @@
-# SafeDN_Web
+### SafeDN_Web
+### 💻 Skills
+React + TypeScript + tailwind + redux
+
