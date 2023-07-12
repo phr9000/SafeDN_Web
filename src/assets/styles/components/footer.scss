@@ -1,0 +1,77 @@
+.footerWrapper{
+    width: 100%;
+    height: 200px;
+    flex-shrink: 0;
+    background: #454545;
+    justify-content: space-around;
+    display: flex;
+
+    .infoWrapper{
+        padding-top: 30px;
+        .basicFont{
+            color: #DEDEDE;
+            font-family: Spoqa Han Sans Neo;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.84px;
+        }
+        .emphasisFont{
+            color: #FFF;
+            font-family: Spoqa Han Sans Neo;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -1.8px;
+        }
+        .copyrightFont{
+            color: #878787;
+            font-family: Spoqa Han Sans Neo;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.72px;
+        }
+        .customerServiceWrapper{
+            .customerService{
+                margin-bottom: 5px;
+            }
+        }
+        .policyWrapper{
+            margin-top: 13px;
+            margin-bottom: 13px;
+            display: flex;
+            p{
+                margin-right: 40px;
+                cursor: pointer;
+            }
+        }
+        .companyWrapper{
+            .representativeWrapper{
+                display: flex;
+                .representative{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .logooWrapper{
+        padding-top: 45px;
+        .logo{
+            margin-left: 25px;
+            margin-bottom: 12px;
+        }
+        .logoFont{
+            color: #FFF;
+            font-family: KOTRA_BOLD;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}
